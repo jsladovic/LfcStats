@@ -14,6 +14,11 @@ class Match:
     def to_string(self):
         return 'match ' + self.match_in_season + ' against ' + self.opponent + '(' + str(self.goals_for) + ':' + str(self.goals_against) + ')'
 
+    def is_league(self):
+        return self.competition in ['Premier League', '1st Division', '2nd Division',
+                                    'Football League Northern Section', 'North Regional League',
+                                    'Lancashire Section Principal Tournament', 'Lancashire League']
+
     def home(self):
         return self.stadium == 'Anfield'
 

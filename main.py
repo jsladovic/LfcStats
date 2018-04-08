@@ -68,5 +68,9 @@ if need_stats:
 
 seasons = get_cached_data(cache_path)
 analyzer = Analyzer(seasons)
-analyzer.find_seasons_with_most_n_goal_wins(5)
-analyzer.find_seasons_with_most_n_goal_games(5)
+
+#analyzer.print_all_competitions()
+#analyzer.find_seasons_with_most_n_goal_wins(5)
+#analyzer.find_seasons_with_most_n_goal_games(5)
+
+analyzer.find_seasons_with_least_conceded_over_n_games(10, False)
